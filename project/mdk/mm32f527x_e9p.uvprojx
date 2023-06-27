@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>DCACHE_DISABLED CFG_TUSB_MCU NDEBUG</Define>
               <Undefine></Undefine>
-              <IncludePath>..\user\inc;..\code;..\..\libraries\zf_common;..\..\libraries\zf_device;..\..\libraries\zf_driver;..\..\libraries\sdk;..\..\libraries\sdk\CMSIS\Include;..\..\libraries\sdk\CMSIS\DSP\Include;..\..\libraries\sdk\CMSIS\DSP\Include\dsp;..\..\libraries\sdk\drivers;..\..\libraries\components\ff14b\source;..\..\libraries\components\tinyusb\src;..\..\libraries\components\tinyusb\src\class\audio;..\..\libraries\components\tinyusb\src\class\bth;..\..\libraries\components\tinyusb\src\class\cdc;..\..\libraries\components\tinyusb\src\class\dfu;..\..\libraries\components\tinyusb\src\class\hid;..\..\libraries\components\tinyusb\src\class\midi;..\..\libraries\components\tinyusb\src\class\msc;..\..\libraries\components\tinyusb\src\class\net;..\..\libraries\components\tinyusb\src\class\usbtmc;..\..\libraries\components\tinyusb\src\class\vendor;..\..\libraries\components\tinyusb\src\class\video;..\..\libraries\components\tinyusb\src\common;..\..\libraries\components\tinyusb\src\device;..\..\libraries\components\tinyusb\src\host;..\..\libraries\components\tinyusb\src\osal;..\..\libraries\components\freertos\FreeRTOS-Kernel\include;..\..\libraries\components\freertos\FreeRTOS-Kernel\portable\GCC\ARM_CM33_NTZ\non_secure</IncludePath>
+              <IncludePath>..\include;..\..\libraries\zf_common;..\..\libraries\zf_device;..\..\libraries\zf_driver;..\..\libraries\sdk;..\..\libraries\sdk\CMSIS\Include;..\..\libraries\sdk\CMSIS\DSP\Include;..\..\libraries\sdk\CMSIS\DSP\Include\dsp;..\..\libraries\sdk\drivers;..\..\libraries\components\ff14b\source;..\..\libraries\components\tinyusb\src;..\..\libraries\components\tinyusb\src\class\audio;..\..\libraries\components\tinyusb\src\class\bth;..\..\libraries\components\tinyusb\src\class\cdc;..\..\libraries\components\tinyusb\src\class\dfu;..\..\libraries\components\tinyusb\src\class\hid;..\..\libraries\components\tinyusb\src\class\midi;..\..\libraries\components\tinyusb\src\class\msc;..\..\libraries\components\tinyusb\src\class\net;..\..\libraries\components\tinyusb\src\class\usbtmc;..\..\libraries\components\tinyusb\src\class\vendor;..\..\libraries\components\tinyusb\src\class\video;..\..\libraries\components\tinyusb\src\common;..\..\libraries\components\tinyusb\src\device;..\..\libraries\components\tinyusb\src\host;..\..\libraries\components\tinyusb\src\osal;..\..\libraries\components\freertos\FreeRTOS-Kernel\include;..\..\libraries\components\freertos\FreeRTOS-Kernel\portable\GCC\ARM_CM33_NTZ\non_secure</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -382,37 +382,17 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>user_c</GroupName>
+          <GroupName>src</GroupName>
           <Files>
             <File>
               <FileName>isr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\user\src\isr.c</FilePath>
+              <FilePath>..\src\isr.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\user\src\main.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>user_h</GroupName>
-          <Files>
-            <File>
-              <FileName>isr.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\user\inc\isr.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>code</GroupName>
-          <Files>
-            <File>
-              <FileName>本文件夹作用.txt</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\code\本文件夹作用.txt</FilePath>
+              <FilePath>..\src\main.c</FilePath>
             </File>
           </Files>
         </Group>
